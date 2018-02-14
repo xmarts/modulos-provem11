@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="report_contract_quetzal">
+<t t-name="sli_customize.report_contrat_quetzal">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+            <br/>
+            <p style="text-align:center; font-size:12pt;"> <b>CONTRATO INDIVIDUAL DE TRABAJO AUTOTRANSPORTES.</b></p>
+            <span style='margin-left: 2em'>
+                En el Municipio de Tlaquepaque en el Estado de Jalisco, siendo los 08 días del mes de Diciembre del año 2016, en la finca ubicada en Calle San Jose del Valle # 46 en Vista Hermosa, Tlaquepaque Jalisco, comparecen por una parte la empresa mercantil denominada <b>LOGÍSTICA Y SERVICIOS QUETZAL S.A. DE C.V.</b>, representada en estos momentos por la persona física el Señor <b>LUIS ARMANDO GONZÁLEZ MELENDREZ</b> quien en lo sucesivo se le denominara como <b>“EL PATRÓN”</b> y por otra parte comparece el <b>C.</b><b t-field="o.employee_id.name"/> que en lo sucesivo se le denominara como <b>“EL TRABAJADOR”</b>, los cuales, manifiestan que celebran un CONTRATO INDIVIDUAL DE TRABAJO, bajo los ANTECEDENTES, y CLÁUSULAS que a continuación se establecen:
+            </span><br/>
+            <br/><p style="text-align:center;font-size:11pt;"><b> A N T E C E D E N T E S</b></p><br/><br/>
+            <span style='margin-left: 2em'>
+                <b>LEGALES:</b> Que en el presente CONTRATO INDIVIDUAL DE TRABAJO se encuentran establecidas las CONDICIONES GENERALES, establecidos especialmente en el artículo 25 y 31 de la Ley Federal del Trabajo y en especial en lo dispuesto por Trabajos Especiales, DEL TRABAJO DE AUTOTRANSPORTES, por lo cual además de la mencionada Ley Federal del Trabajo por ser un trabajo especial le rige el Reglamento de TRANSITO EN CARRETERAS FEDERALES, así como las disposiciones legales que rijan las OPERACIONES DE TRANSPORTE DE CARGA FEDERAL, ESTATAL o MUNICIPAL.
+            </span><br/><br/>
+            <span style='margin-left: 2em'><b>DE “EL PATRÓN”:</b>
+            </span><br/><br/>
+            <span style='margin-left: 2em'><b>LOGÍSTICA Y SERVICIOS QUETZAL S.A. DE C.V.</b> es una persona moral mercantil constituida como Sociedad Anónima de Capital Variable, cuyo objeto social es “La prestación del Servicio Público Federal de carga en general en caminos y puentes de jurisdicción federal entre otras…” los términos de la Ley General de Sociedades Mercantiles, la cual se encuentra constituida en la Escritura Pública número 75,101, de fecha 14 de Diciembre del 2010, pasada ante la Fe del Notario Público número 64 de Guadalajara Jalisco Licenciado Sergio Alejandro López Rivera, la cual además, se encuentra debidamente inscrita en el Registro Público de la Propiedad y del Comercio mediante Folio Mercantil 58751*1. En virtud de que ejerce actos jurídicos como <b>“EL PATRÓN”</b>, se encuentra debidamente inscrita en:
+            </span><br/><br/>
+            <span>
+                INSTITUTO MEXICANO DEL SEGURO SOCIAL,<b>“IMSS”:</b> Bajo el Registro Patronal: <b>H68-21199-10-4</b><br/><br/>
+                SECRETARIA DE HACIENDA Y CRÉDITO PÚBLICO, <b>“S.A.T.”</b>  con la siguiente CEDULA DE IDENTIFICACIÓN FISCAL: <b>LSQ101216L18</b><br/><br/>
+            </span>
+            <span style='margin-left: 2em'><b>“EL PATRÓN”,</b> se encuentra instalado en la fuente laboral en el domicilio  ubicado Calle Alfonso Reyes 403 El Zapote del Valle en Tlajomulco de Zúñiga Jalisco, toda vez que la actividad es <b>EL SERVICIO DE AUTOTRANSPORTE DE CARGA</b>,  se identifica como <b>“LA TERMINAL”.</b></span><br/><br/>
+            <span style='margin-left: 2em'><b>ACTIVIDAD COMERCIAL COTIDIANA DE “EL PATRÓN”:</b> Que la actividad como se desprende del objeto social es la <b>PRESTACIÓN AL PÚBLICO EN GENERAL DEL SERVICIO DE TRANSPORTE TERRESTRE DE TODO TIPO DE CARGA DE MERCANCIAS LEGALES</b>, que lo presta mediante las siguientes <b>HERRAMIENTAS DE TRABAJO:</b></span><br/><br/>
+            <span style='margin-left: 2em'>Los tipos de unidades son: Plataformas, Cajas Secas, Cajas Refrigeradas, Contenedores de 20 y 40 Pies:</span><br/><br/>
+                <br/><br/><br/><br/>
+            <span style='margin-left: 2em'>
+                Que las mencionadas Herramientas de Trabajo como se desprende de los artículos 132 y 256 al 264 de la Ley Federal del Trabajo, como <b>OBLIGACIONES DE LOS PATRONES</b>, son las <b>HERRAMIENTAS DE TRABAJO</b>, las cuales se encuentran en perfectas condiciones físicas, mecánicas y legales para maniobrar como transporte de carga Federal o Estatal además de que cuentan con las respectivas <b>AUTORIZACIONES</b> de la Secretaria de Comunicaciones y Transporte, de la misma forma, cuentan debidamente <b>CON PLACAS DE CIRCULACIÓN FEDERAL</b> o <b>ESTATAL</b> Engomados, Autorizaciones, Registros, Verificaciones por dichas autoridades, por lo cual son las herramientas de trabajo que <b>“EL PATRÓN”</b> pone a disposición de <b>“EL TRABAJADOR”</b> como <b>HERRAMIENTAS DE TRABAJO</b>.
+            </span><br/><br/>
+            <span style='margin-left: 2em'><b>DE “EL TRABAJADOR”:</b></span><br/><br/>
+            <span style='margin-left: 2em'>
+                <b>PRIMERO, DEL CONOCIMIENTO DEL REGLAMENTO DE TRANSITO EN CARRETERAS FEDERALES</b>: Declara el Trabajador que conoce perfectamente la Ley de Caminos, Puentes y Autotransporte Federal, así como el Reglamento de Tránsito en Carreteras Federales Publicado en el Diario Oficial de la Federación del 10 de Junio del año 1975, que conoce perfectamente lo establecido en los Artículos 47, 53 y 59 de dicho Reglamento que a la letra se transcribe:
+            </span><br/><br/>
+            <span style='margin-left: 2em'>
+                <b>Art. 47</b>.- Para conducir vehículos destinados a la prestación de un servicio  público federal de autotransporte, será necesario obtener la correspondiente licencia federal de conductor, expedida por la Secretaria de Comunicaciones y Transporte.
+            </span><br/><br/>
+            <span style='margin-left: 2em'>
+                <b>Art. 53</b>.- Procede  la revocación de licencia al conductor de vehículos de servicio público federal, en los casos siguientes:
+            </span><br/><br/>
+            <div style="padding-left:25px;margin-left:25px;">
+            <ol>
+                <li>
+                Por sentencia ejecutoria de la autoridad judicial, que imponga como condena dicha revocación.
+                </li>
+                <li>
+                Por conducir un vehículo, destinado al servicio público federal, bajo la influencia de bebidas alcohólicas o el efecto de drogas enervantes.
+                </li>
+                <li>
+                Por cualquier acto delictuoso cometido durante la operación de un vehículo de servicio público federal, en contra de los pasajeros o por disponer en su beneficio de la mercancía que se transporta.
+                </li>
+                <li>
+                Por abandono del vehículo o de personas en caso de accidente, en que haya intervenido el vehículo de servicio público federal que conduce.
+                </li>
+                <li>
+                Por incurrir tres ocasiones en infracción a las disposiciones sobre velocidad máxima permitida, en un período de tres años.
+                </li>
+                <li>
+                Por ser el responsable de tres accidentes de tránsito con daños materiales, en un período de doce meses.
+                </li>
+                <li>
+                Por ser el responsable de dos accidentes con saldo de lesionados o muertos.
+                </li>
+                <li>
+                Por ser el responsable de cualquier alteración de los datos contenidos en la licencia federal de conductor.
+                </li>
+                <li>
+                Por incurrir en tercera ocasión en la operación o conducción de vehículos sin utilizar el cinturón de seguridad, sin perjuicio de lo dispuesto por el Artículo 200 fracción 7 de este Reglamento.
+                </li>
+                <li>
+                Por incurrir en actos u omisiones graves, contrarias a lo que se dispone en el presente Reglamento, a juicio de la Secretaría de Comunicaciones y Transportes.
+                </li>
+            </ol>
+            </div>
+
+            <table style=" border:0px solid white; width:100%;color:black;">
+               <tr>
+                  <td style="width:40%;">
+                       <span style="text-align:center;padding-left:15px;margin-left:15px">  </span>
+                  </td>
+                  <td style=" width:20%;">
+
+                  </td>
+                   <td style=" width:40%;">
+                       <span style="text-align:center;padding-left:15px;margin-left:15px">  </span>
+                  </td>
+               </tr>
+                <tr>
+                  <td style="width:40%; height:20px;">
+                  </td>
+                  <td style=" width:20%; height:20px;">
+
+                  </td>
+                   <td style=" width:40%; height:20px;">
+                  </td>
+               </tr>
+                <tr>
+                  <td style="width:40%;border-top:1px solid black;">
+                      <center>''EL TRABAJADOR''<br/> <span style="padding-left:15px;margin-left:15px" t-field="o.employee_id.name"/> </center>
+
+                  </td>
+                  <td style=" width:20%;">
+
+                  </td>
+                   <td style=" width:40%;border-top:1px solid black;">
+                      <center> <span style="text-align:center;padding-left:15px;margin-left:15px">“EL PATRON” <br/>REPRESENTADA POR EL SR. GUSTAVO GUZMAN ROMERO
+  </span></center>
+                  </td>
+               </tr>
+            </table><br/><br/>
+
+        </div>
+    </t>
+            </t></t></t>
+</template>
+
+        <report
+            string="Contrato de trabajo Quetzal"
+            id="sli_customize.contract_quetzal"
+            model="hr.contract"
+            report_type="qweb-pdf"
+            name="sli_customize.report_contrat_quetzal"
+            file="sli_customize.report_contrat_quetzal"
+            attachment_use="True"
+            paperformat="sli_customize.paperformat_reportesprovem"
+        />
+
+
+</odoo>

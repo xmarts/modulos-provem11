@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	 <data>
+	 	<record id="inherit_hr_documents" model="ir.ui.view">
+	 		<field name="name">hr.employee.form.documents.inherit</field>
+	 		<field name="model">hr.employee</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="hr.view_employee_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='medical']" position="after">
+                    <page string="Documentos" name="e_documents">
+                        <group name="group_documents">
+                            <group name="group_documents_left" >
+                                <field name="hr_doc_rfc"/>
+                                <field name="hr_doc_curp"/>
+                                <field name="hr_doc_ife"/>
+                                <field name="hr_doc_nss"/>
+                                <field name="hr_doc_acta"/>
+                                <field name="hr_doc_comp_dom"/>
+                                <field name="hr_doc_canp"/>
+                            </group>
+                            <group name="group_documents_right" >
+                                <field name="hr_doc_cv"/>
+                                <field name="hr_doc_comp_est"/>
+                                <field name="hr_doc_car_reco"/>
+                                <field name="hr_doc_reg_induc"/>
+                                <field name="hr_doc_req_per"/>
+                                <field name="hr_doc_diplo"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+	    </record>
+     </data>
+</openerp>

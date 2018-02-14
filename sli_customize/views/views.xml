@@ -1,0 +1,111 @@
+<openerp>
+  <data>
+    <record id="new_field_datebirthday" model="ir.ui.view">
+            <field name="name">hr.employee.form.add.text.field</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr_applicant_recruitment.view_employee_form_inerit_applicant"/>
+            <field name="arch" type="xml">
+              <xpath expr="//page[@name='family']/group/field[@name='applicant_family_ids']/tree/field[@name='age']" position="after">
+                     <field name="fechanacimiento" />
+              </xpath>
+                 <xpath expr="//page[@name='family']/group/field[@name='applicant_family_ids']/tree/field[@name='age']" position="replace">
+                     <field name="age" invisible="1" />
+              </xpath>
+                <xpath expr="//page[@name='medical']/group/field[@name='applicant_medical_ids']/tree/field[@name='checkup_result']" position="after">
+                     <field name="fechaexamen"/>
+              </xpath>
+                <xpath expr="//page[@name='medical']" position="after">
+                     <page string="Creditos" name="credit">
+                        <group>
+                            <field name="applicant_credit_ids" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="referencecredit"/>
+                                    <field name="typecredit"/>
+                                    <field name="numbercredit"/>
+                                    <field name="importinit"/>
+                                    <field name="state"/>
+                                </tree>
+                                <form>
+                                    <group>
+                                        <group>
+                                            <field name="referencecredit"/>
+                                            <field name="typecredit"/>
+                                            <field name="numbercredit"/>
+                                        </group>
+                                        <group>
+                                            <field name="importinit"/>
+                                            <field name="state"/>
+                                        </group>
+                                    </group>
+                                </form>
+                            </field>
+                        </group>
+                    </page>
+
+                    <page string="Histórico de empresas" name="historical">
+                        <group>
+                            <field name="applicant_historical_ids" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="organization_id"/>
+                                    <field name="admissiondate"/>
+                                    <field name="dischargedate"/>
+                                    <field name="settlement"/>
+                                </tree>
+                                <form>
+                                    <group>
+                                        <group>
+                                            <field name="organization_id"/>
+                                            <field name="admissiondate"/>
+                                            <field name="dischargedate"/>
+                                            <field name="settlement"/>
+                                        </group>
+                                    </group>
+                                </form>
+                            </field>
+                        </group>
+                    </page>
+              </xpath>
+             </field>
+        </record>
+
+       <record id="new_field_process_selection" model="ir.ui.view">
+            <field name="name">process.selcton.form.add.text.field</field>
+            <field name="model">hr.applicant</field>
+            <field name="inherit_id" ref="hr_applicant_recruitment.view_account_payment_form_inherit"/>
+            <field name="arch" type="xml">
+              <xpath expr="//page[@name='family']/group/field[@name='applicant_family_ids']/tree/field[@name='age']" position="after">
+                     <field name="fechanacimiento" />
+              </xpath>
+                 <xpath expr="//page[@name='family']/group/field[@name='applicant_family_ids']/tree/field[@name='age']" position="replace">
+                     <field name="age" invisible="1" />
+              </xpath>
+                <xpath expr="//page[@name='medical']/group/field[@name='applicant_medical_ids']/tree/field[@name='checkup_result']" position="after">
+                     <field name="fechaexamen"/>
+              </xpath>
+            </field>
+        </record>
+
+        <record id="new_field_tipo_licencia" model="ir.ui.view">
+            <field name="name">tipo.licencia.form.add.text.field</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+              <xpath expr="//field[@name='bank_account_id']" position="after">
+                     <field name="x_licencia_id" />
+                     <field name="tipo_licencia" />
+              </xpath>
+            </field>
+        </record>
+
+        <record id="new_field_contract_sueldo" model="ir.ui.view">
+            <field name="name">hr.contract.form.add.text.field</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+              <xpath expr="//field[@name='advantages']" position="after">
+                     <field name="sueldo_a_pagar" />
+              </xpath>
+            </field>
+        </record>
+  </data>
+</openerp>

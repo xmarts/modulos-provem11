@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="sli_customize.report_contrat_sli">
+<t t-name="sli_customize.report_contrat_sli">
+        <t t-call="web.html_container">
+    <t t-foreach="docs" t-as="o">
+        <t t-call="web.external_layout">
+        <div class="page">
+            <br/>
+            <p style="text-align:center; font-size:12pt;"> <b>CONTRATO INDIVIDUAL DE TRABAJO</b></p>
+            <span style='margin-left: 2em'>En Tlajomulco de Zúñiga, Jalisco a 01 de Junio del año 2015, en el domicilio ubicado en Alfonso Reyes No. 401, Zapote del Valle en Tlajomulco de Zúñiga, Jalisco celebran el presente contrato, por una parte la persona moral <b>SOLUCIONES LOGISTICAS INTELIGENTES S.A. DE C.V.</b>,  
+                representada por el <b> Sr. Gustavo Guzmán Romero </b>  quien comparece como representante Legal de la empresa a quien en lo sucesivo se le denominara como
+                <b>“EL PATRÓN” </b> y por otra parte comparece el <b>C</b><b t-field="o.employee_id.name"/>
+                , a quien en lo sucesivo se le denominara como <b>“EL TRABAJADOR”</b>,los cuales manifiestan que celebran un CONTRATO INDIVIDUAL DE TRABAJO, bajo los ANTECEDENTES, y CLÁUSULAS que a continuación se establecen:
+            </span><br/>
+            <br/><p style="text-align:center;font-size:11pt;"><b> A N T E C E D E N T E S</b></p><br/>
+            <span style='margin-left: 2em'>
+                <b>LEGALES:</b> Que en el presente CONTRATO INDIVIDUAL DE TRABAJO, se encuentra establecidas las CONDICIONES GENERALES, especificados en los artículos 20, 25 y 31 de la Ley Federal del Trabajo.
+            </span><br/><br/>
+            <span style='margin-left: 2em'>
+                <b>“EL PATRÓN”,</b> se encuentra instalado en la  fuente de trabajo ubicada en  Alfonso Reyes No. 401, Zapote del Valle en Tlajomulco de Zúñiga, Jalisco.
+            </span><br/><br/>
+            <span style='margin-left: 2em'>
+                Que las mencionadas Herramientas de Trabajo como se desprende de los artículos 132 de la Ley Federal del Trabajo, como <b>OBLIGACIONES DE LOS PATRONES,</b> son las <b>HERRAMIENTAS DE TRABAJO,</b> como lo son todos aquellos materiales necesarios para la ejecución del trabajo,  las cuales se encuentran en perfectas condiciones físicas y legales, por lo cual son las herramientas de trabajo que <b>“EL PATRÓN”</b> pone a disposición de <b>“EL TRABAJADOR”,</b> y que se hace una descripción en forma enunciativa más no limitativa mediante el documento que se anexa al presente contrato individual de trabajo como (Anexo 1)
+            </span><br/><br/>
+            <span style='margin-left: 3em'><b>DE “EL TRABAJADOR”:</b> </span><br/><br/>
+            <span>
+                1.- Bajo protesta de decir verdad el Trabajador  <b>C.</b> <b t-field="o.employee_id.name"/>   declara ser de nacionalidad mexicana, de <span t-field ="o.employee_id.edad"/>  años de edad, estado civil  <span t-field="o.employee_id.marital"/>  con domicilio en la finca marcada con el número <span t-field="o.employee_id.address_home_id.street_number"/>
+                de la calle <span t-field ="o.employee_id.address_home_id.street"/>, en <span t-field="o.employee_id.address_home_id.city"/>, <span t-field="o.employee_id.address_home_id.state_id.name"/>. Que se encuentra inscrito en el IMSS, con el Número <span t-field="o.employee_id.x_nss"/>, Que si cuenta con Crédito Infonavit Número <b t-field="o.employee_id.x_nss"/>, Mismo que desde este momento pasa a ser cubierto por <b>“EL PATRON”</b>, por lo que acepta y está de acuerdo con las deducciones que correspondan  y que se realizarán con forme a la Ley.
+            </span><br/><br/>
+            <span>
+                Sigue declarando “EL TRABAJADOR”, que no tiene padecimiento de enfermedad crónico degenerativa, contagiosa o incurable, y para confirmar el estado de salud, se somete a los estudios médicos que “EL PATRON”, le encomiende
+            </span><br/><br/>
+            <span>
+                Así mismo declara “EL TRABAJADOR”, que no cuenta con antecedentes penales ni en su persona, ni en sus familiares de 1er y 2do grado de parentesco, esto con la finalidad de hacer del conocimiento de “EL PATRON”, que se encuentran “EL TRABAJADOR” y su familia, libres de cualquier compromiso con la Justicia
+            </span><br/><br/>
+            <span>
+                2.- “EL TRABAJADOR” manifiesta que tiene la capacidad y aptitudes para desarrollar las actividades para lo cual fue contratado, toda vez que le fueron explicadas una a una, de manera detallada, los alcances  y resultados esperados de la misma, todo esto contenido en el (Anexo 2), del presente instrumento <br/>
+Así mismo “EL TRABAJADOR”,  manifiesta que conoce, entiende y acepta los indicadores de desempeño que maneja “EL PATRON”, para control de resultados del puesto para el cual fue contratado, los cuales se describen en el (Anexo 3), mismos que podrán ser modificados si “EL PATRON”, lo determina por así convenir a sus intereses de productividad y crecimiento <br/><br/>
+3.- “EL TRABAJADOR”, es conforme en desempeñar los requerimientos de “EL PATRON” y en plasmar en el presente contrato las condiciones generales de trabajo sobre las cuales prestará sus servicios personales.<br/>
+            </span><br/>
+            <br/><p style="text-align:center;font-size:11pt;"><b> C L A U S U L A S:</b></p><br/><br/>
+            <span>
+                <b>PRIMERA.</b>- Para efectos de mayor brevedad y evitar posibles confusiones en el presente contrato se denominará en lo sucesivo a la persona moral Soluciones Logísticas Inteligentes S.A. DE C.V., como ''EL PATRON''; y al C. <span t-field="o.employee_id.name"/>  como ''EL TRABAJADOR''; a la Ley Federal del Trabajo como ''LA LEY'', al referirse al presente documento como ''EL CONTRATO'', y a los que suscriben como ''LAS PARTES''.<br/><br/>
+                <b>SEGUNDA.</b>- Este ''CONTRATO'' se celebra por tiempo indeterminado según lo establece el artículo 25 fracción II de la Ley Federal del Trabajo.<br/><br/>
+                <b>TERCERA.</b>- El lugar de la prestación  de los servicios de ''EL TRABAJADOR'' será en el domicilio de ''EL PATRON'' ubicado en Alfonso Reyes No. 401, Zapote del Valle en Tlajomulco de Zúñiga, Jalisco.<br/><br/>
+                Asimismo ''LAS PARTES'' convienen y acepta “EL TRABAJADOR'' que cuando por razones administrativas, operativas o de desarrollo de la actividad o prestación de servicios contratados haya necesidad, podrá trasladarse al lugar que ''EL PATRON'' le asigne o designe, siempre y cuando no se vea menoscabado en su salario, dicha orden la dará el patrón por escrito la cual deberá de contener la firma del patrón con la cual se autoriza remover a el trabajador a cualquier otro lugar que ''EL PATRON'' requiera de los servicios de ''EL TRABAJADOR'', o prestar otro servicio diferente al cual es contratado por medio del presente contrato.<br/><br/>
+                En este caso ''EL PATRON'' le comunicará con 10 días de anticipación la remoción del lugar de prestación de servicios indicándole el nuevo asignado.<br/><br/>
+                Para el caso que en el nuevo lugar de prestación de servicios que le fuera asignado variara el horario de labores, ''EL TRABAJADOR'' acepta  dicha modalidad.<br/><br/>
+                Quedando estrictamente prohibido realizar actividades no asignadas fuera del domicilio    del patrón y que no sean aquellas a desarrollar materia del contrato, y por medio de la cual se está contratando ''EL TRABAJADOR'' para llevar a cabo las actividades que han quedado descritas en el presente contrato, es decir, realizar actividades diferentes para lo cual fue contratado por medio del presente contrato, en cuyo caso será necesario la autorización u orden por escrito y firmada que previamente haga entrega ''EL PATRON'' a ''EL TRABAJADOR'' .  <br/><br/>
+                <b>CUARTA.</b>- La duración de la jornada de trabajo será de 48 horas semanales, quedando distribuida de acuerdo al siguiente horario de labores:<br/>
+                De las 9:00 horas a las 14:00 horas y de las 15:00 horas a las 18:00 horas, de Lunes a  Viernes.<br/><br/>
+                 Y los días sábados de las 9:00 horas a las 14:00 horas.<br/><br/>
+                Quedando a elección de ''EL PATRON'' prolongar la jornada de trabajo de 48 horas semanales, esto cuando lo crea necesario por motivos de urgencia.<br/><br/>
+                Teniendo una hora de descanso para tomar alimentos los cuales podrá tomarlos dentro de la fuente laboral o bien podrá retirarse ''EL TRABAJADOR'' de la fuente laboral, quedando a elección de ''EL TRABAJADOR'' si toma sus alimentos dentro o fuera de la fuente laboral, quedando en su caso comprendido el mismo de las 14:00 horas a las 15:00 horas.<br/><br/>
+                ''EL TRABAJADOR'' únicamente podrá laborar tiempo extraordinario cuando ''EL PATRON” se lo indique y mediante una orden por escrito y firmada por su (patrón), la que señalará el día o los días y el horario en el cual se desempeñarán las horas extras. Para el caso de computar el tiempo extraordinario laborado deberá ''EL TRABAJADOR'' recabar y conservar la orden referida anteriormente a fin de que le sea pagado el tiempo extra laborado; la falta de presentación de esa orden solo es imputable a ''EL TRABAJADOR'' y en consecuencia no existieron horas extras laboradas por el trabajador por no haber recibido la orden por escrito de ''EL PATRON'' con su firma respectiva, lo que hará inverosímil la de las supuestas horas extras laboradas.<br/><br/>
+                “EL TRABAJADOR'' deberá presentarse puntualmente a sus labores en el horario de trabajo establecido, ya que por ningún motivo se permitirá  tolerancia para ingresar a prestar sus servicios y firmar las listas de asistencia acostumbradas o checar su tarjeta de asistencia en el reloj-checador diariamente. En caso de retraso o falta de asistencia injustificada podrá ''EL PATRON'' imponerle cualquier corrección disciplinaria de las que contenga el Reglamento Interior de Trabajo, o lo establecido en el artículo 47 de la Ley Federal del Trabajo.<br/><br/>
+                <b>QUINTA.</b>- ''EL TRABAJADOR'' percibirá por la prestación de sus servicios como <b>Salario Diario Integrado la cantidad de $</b><b t-field="o.wage"/> pesos (<b t-field="o.amount_to_text"/>) Los cuales serán cubiertos en efectivo y en moneda nacional, o bien mediante depósito realizado en cuenta bancaria a favor del trabajador cada 15 días, es decir el pago será <u>el día 15 y 30 de cada mes  por la cantidad de $<span t-field="o.salarioquin"/>(<span t-field="o.amount_to_text_salary"/>).</u> Del salario anterior ''EL PATRON'' hará por cuenta de ''EL TRABAJADOR'' las deducciones legales correspondientes, particularmente las que se refieren a impuestos sobre la Renta, Seguridad Social, cuota sindical, las cuales ya se encuentra contempladas en dicho monto, siendo sueldo integro a pagar por dicha cantidad de $<span t-field="o.sueldo_a_pagar"/>(<span t-field="o.amount_to_text_sueldo"/>).<br/><br/>
+                ''EL TRABAJADOR'' deberá cada vez que le sea pagado su salario extender a favor de ''EL PATRON'' el recibo correspondiente en los documentos que el mismo le presente para tales fines.<br/><br/>
+                <b>SEXTA.</b>- ''EL TRABAJADOR'' recibirá el pago de su salario en el domicilio del lugar de la prestación de sus servicios, cuando este sea en efectivo o bien mediante depósito que realice “EL PATRON” en cuenta bancaria a favor de “EL TRABAJADOR”.<br/><br/>
+                <b>SEPTIMA.</b>- ''EL TRABAJADOR'' tendrá derecho por cada seis días de labores a descansar uno con el pago de salario diario correspondiente. Queda establecido preferentemente como día de descanso semanal el día domingo de cada semana.<br/><br/>
+                <b>OCTAVA.</b>- Cuando ''EL TRABAJADOR'' por razones administrativas tenga que laborar el día de descanso señalado anteriormente, ''El PATRON'' le pagará, además de su salario ordinario, un 25% (Veinticinco por Ciento) como prima dominical sobre el salario ordinario devengado. Independientemente del día de descanso semanal, al que tendrá derecho, quedando prohibido laborar sin la autorización previa por el patrón la cual la dará por escrito y con su firma de autorización para que labore ''EL TRABAJADOR''.<br/><br/>
+                <b>NOVENA.</b>- Quedan establecidos como días de descanso obligatorio los señalados en el artículo 74 de La Ley Federal del Trabajo.<br/><br/>
+                <b>DECIMA.</b>- ''EL TRABAJADOR'' tendrá derecho a recibir por parte de ''EL PATRON'' el importe correspondiente a quince días de salario como pago del aguinaldo a que se refiere el artículo 87 de la Ley Federal del Trabajo, o su parte proporcional según los días laborados.<br/><br/>
+                <b>DECIMA PRIMERA.</b>- ''EL TRABAJADOR'' acepta someterse a los exámenes médicos que periódicamente establezca ''EL PATRON'' en los términos del artículo 134 Fracción X de la Ley Federal del Trabajo, a fin de mantener en forma óptima sus facultades físicas e intelectuales, para el mejor desempeño de sus funciones. El médico que practique los reconocimientos será designado y retribuido por ''EL PATRON''.<br/><br/>
+                <b>DECIMA SEGUNDA.</b>- ''EL TRABAJADOR'' deberá integrarse a los Planes, Programas y Comisiones Mixtas de Capacitación y Adiestramiento así como a los de Seguridad e Higiene en el Trabajo que tiene constituidos ''EL PATRON'', tomando parte activa dentro de los mismos según los cursos establecidos y medidas preventivas de riesgos de trabajo.<br/><br/>
+                <b>DECIMA TERCERA.</b>- ''EL TRABAJADOR'' deberá observar y cumplir todo lo contenido en el Reglamento Interior de Trabajo y el Código de Ética y Conducta con que cuenta ''EL PATRON'' y que tiene fijado en las áreas de mayor visibilidad, estos contenidos en el (Anexo 4 Y 5), como parte del presente contrato<br/><br/>
+                <b>DECIMA CUARTA.</b>- ''EL TRABAJADOR'' deberá dar fiel cumplimiento a las disposiciones contenidas en los artículos 134 y 135 de la Ley Federal del Trabajo y que corresponden a las obligaciones y prohibiciones de los trabajadores en el desempeño de sus labores al servicio de ''EL PATRON''.<br/><br/>
+                <b>DECIMA QUINTA.</b>- Acuerdan ambas partes que en caso de que el Trabajador no tenga las aptitudes o carezca de las facultades y capacidad para desempeñar el cargo para el cual fue contratado, se dará por rescindido el presente contrato sin responsabilidad para el Patrón, en los supuestos que marca la Ley Federal de Trabajo en los Artículos 39-A y 39-B, y en todo caso le serán cubiertas las partes proporcionales que por ley le correspondan por el tiempo en que haya prestado el servicio “EL TRABAJADOR”  a “EL PATRON”, así mismo se observarán para efectos de recisión de contrato sin responsabilidad para “EL PATRON”, los supuestos contenido en el Artículo 47 y todas sus fracciones,  en el momento que se detecte dicho supuesto por parte de “EL PATRON”<br/><br/>
+                <b>DECIMA SEXTA.</b>- Si por así convenir a los intereses de “EL TRABAJADOR”, decide retirarse de laborar con “EL PATRON” , este deberá dar aviso de manera anticipada por lo menos  3 meses si se trata de puestos directivos, jefaturas, gerencias; y de 1 mes en tratándose de puestos operativos, con el fin de que “ EL TRABAJADOR”, transmita los conocimientos necesarios  a la persona que se quede en su lugar, y que este sea capaz de cumplir con los objetivos del puesto como son funciones, actividades, negociaciones, contactos, clientes, proveedores, cuentas pendientes etc.<br/><br/>
+                En caso de incumplimiento de esta cláusula  “EL TRABAJADOR”, se hará acreedor a una sanción económica por $ 50,000.00 (CINCUENTAMIL PESOS 00/100 MN), por motivo de daños y perjuicios que deberá pagar “AL PATRON” antes de retirarse de la compañía.<br/><br/> 
+                <b>DECIMA SEPTIMA.</b>- Por la conformación y naturaleza del presente contrato y por la actividad a desarrollar, ''EL TRABAJADOR'' cuenta con información clasificada y de uso reservado, que con el presente contrato se compromete a mantener en forma confidencial, por considerarse que dicha información puede representar ventaja comercial, comprometiéndose además a mantener toda mejora que realicen en forma confidencial, y de esta forma mantener los datos en forma reservada y exclusiva para el beneficio de ''EL PATRON.''<br/><br/>
+                A partir de la fecha de celebración del presente contrato, se obliga , ''EL TRABAJADOR'' a no enajenar, arrendar, prestar, grabar, negociar, revelar, publicar, enseñar, darla a conocer, transmitir o de alguna u otra forma divulgar o proporcionar a cualquier persona física o moral, nacional o extranjera, pública o privada, por cualquier medio, toda aquella información que sea de carácter confidencial y reservada para el uso de sus actividades y que represente una ventaja comercial, que no hayan sido autorizadas para su revelación previamente y por escrito por ''EL PATRON'' conforme lo establece el Artículo 134 Fracción XIII de La Ley Federal del Trabajo, y conforme el (Anexo 6), Convenio de confidencialidad, parte integrante del presente contrato<br/><br/>
+                Leído que fue el presente contrato por quienes en el intervienen lo ratifican e impuestos de su contenido lo firman por duplicado para cada una de las partes.<br/><br/>
+                En la Ciudad de Guadalajara, Jalisco a 01 de Junio del año 2015.<br/><br/>
+            </span><br/><br/>
+            <table style=" border:0px solid white; width:100%;color:black;">
+               <tr>
+                  <td style="width:40%;">
+                       <span style="text-align:center;padding-left:15px;margin-left:15px">  </span>
+                  </td>
+                  <td style=" width:20%;">
+
+                  </td>
+                   <td style=" width:40%;">
+                       <span style="text-align:center;padding-left:15px;margin-left:15px">  </span>
+                  </td>
+               </tr>
+                <tr>
+                  <td style="width:40%; height:20px;">
+                  </td>
+                  <td style=" width:20%; height:20px;">
+
+                  </td>
+                   <td style=" width:40%; height:20px;">
+                  </td>
+               </tr>
+                <tr>
+                  <td style="width:40%;border-top:1px solid black;">
+                      <center>''EL TRABAJADOR''<br/> <span style="padding-left:15px;margin-left:15px" t-field="o.employee_id.name"/> </center>
+
+                  </td>
+                  <td style=" width:20%;">
+
+                  </td>
+                   <td style=" width:40%;border-top:1px solid black;">
+                      <center> <span style="text-align:center;padding-left:15px;margin-left:15px">“EL PATRON” <br/>REPRESENTADA POR EL SR. GUSTAVO GUZMAN ROMERO
+  </span></center>
+                  </td>
+               </tr>
+            </table><br/><br/>
+
+        </div>
+        </t></t></t></t>
+</template>
+
+        <report
+            string="Contrato de trabajo SLI"
+            id="sli_customize.contract_sli"
+            model="hr.contract"
+            report_type="qweb-pdf"
+            name="sli_customize.report_contrat_sli"
+            file="sli_customize.report_contrat_sli"
+            attachment_use="True"
+            paperformat="sli_customize.paperformat_reportesprovem"
+        />
+
+
+</odoo>

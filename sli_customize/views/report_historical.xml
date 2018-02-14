@@ -1,0 +1,47 @@
+<openerp>
+  <data>
+      <record id="view_report_historical_pivot" model="ir.ui.view">
+         <field name="name">report.historical.pivot</field>
+         <field name="model">sli.historical.employee</field>
+         <field name="arch" type="xml">
+             <pivot string="Historial del empleado" disable_linking="True">
+                 <field name="fechaingreso" type="col"/>
+                 <field name="fechabaja" type="col"/>
+                 <field name="motivo" type="col"/>
+                 <field name="finiquito" type="col"/>
+                 <field name="recontratado" type="col"/>
+                 <field name="nombre" type="row"/>
+             </pivot>
+         </field>
+    </record>
+
+      <record id="view_report_historical_search" model="ir.ui.view">
+            <field name="name">view.report_historical.search</field>
+            <field name="model">sli.historical.employee</field>
+            <field name="arch" type="xml">
+                <search string="Historial del empleado">
+                    <field name="nombre"/>
+                    <newline/>
+                    <group expand="0" string="Group By...">
+                         <filter string="Fecha de ingreso" icon="terp-partner" domain="[]" context="{'group_by':'fechaingreso'}"/>
+                        <separator orientation="vertical"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+      <record id="report_historical_action_generic" model="ir.actions.act_window">
+            <field name="name">Reporte Historial del empleado</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sli.historical.employee</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">pivot</field>
+        </record>
+
+        <menuitem action="report_historical_action_generic" name="Reporte Historial del empleado"
+                  id="menu_report_historical"
+                  parent="hr.menu_hr_root"
+                  sequence="3"
+		/>
+  </data>
+</openerp>
